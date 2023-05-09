@@ -31,21 +31,27 @@ def try_again():
 while True:
     try:
         print("1. Addition\n2. Subtraction\n3. Multiplication\n4. Division")
-        operation = input("Please choose from the operations above. Enter 1/2/3/4: ")
+        while True:
+            operation = (input("Please choose from the operations above. Enter 1/2/3/4: "))
+            if operation in ["1", "2", "3", "4"]:
+                break
+            else:
+                print("Invalid input. Please try again.")
 #get user input for numbers
         num_1 = float(input("Enter first number: "))
         num_2 = float(input("Enter second number: "))
+        answer = 0
 #if add, add numbers
-        if operation == 1:
+        if operation == "1":
             answer = add(num_1, num_2)
 #if subtract, subtract numbers
-        elif operation == 2:
+        elif operation == "2":
             answer = subtract(num_1, num_2)
 #if multiply, multiply numbers
-        elif operation == 3:
+        elif operation == "3":
             answer = multiply(num_1, num_2)
 #if divide, divide numbers
-        elif operation == 4:
+        elif operation == "4":
             answer = divide(num_1, num_2)
         else:
             print("Invalid input. Choose an operation by entering a number from 1 to 4.")
