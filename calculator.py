@@ -33,3 +33,7 @@ while True:
         print(f"Result: {answer}")
 #ask user input if want to try again
 #exception handling for invalid inputs
+    except ZeroDivisionError:
+        print("Syntax Error. Cannot be divided by zero. Please try again!")
+    except ValueError:
+        print("INVALID INPUT! PLEASE ENTER A NUMBER")
