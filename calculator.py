@@ -12,6 +12,8 @@ while True:
     try:
         operation = input("What operation would you like to do? ")
 #get user input for numbers
+        num_1 = float(input("Enter first number: "))
+        num_2 = float(input("Enter second number: "))
 #if add, add numbers
 #if subtract, subtract numbers
 #if multiply, multiply numbers
