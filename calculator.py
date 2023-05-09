@@ -7,26 +7,6 @@ def multiply(num_1, num_2):
     return num_1*num_2
 def divide(num_1, num_2):
     return num_1/num_2
-#try again function
-def try_again():
-    again = None
-#asking for user input and checking it
-    while again is None:
-        answer = input('\nWould you like to try and use the calculator again? ')
-#if yes program runs again
-        if answer in ["Y", "YES", "yes", "Yes", "y"]:
-            again = True
-            continue
-#if no prints a message
-        elif answer in ["N", "NO", "no", "No", "n"]:
-            again = False
-            print('Thank you for using the calculator!')
-            break
-#if answer is invalid asks user again
-        else:
-            print('Try answering either YES or NO')
-#return value of again
-    return again
 #get user input for operation choice
 while True:
     try:
@@ -55,10 +35,19 @@ while True:
             answer = divide(num_1, num_2)
         else:
             print("Invalid input. Choose an operation by entering a number from 1 to 4.")
+            continue
 #print output
         print("Result =", answer)
-#call try again function
-        again = try_again()
+#try again
+        while True:
+            again = input("Do you want to use the calculator again? (yes/no): ")
+            if again in ["Y", "YES", "yes", "Yes", "y", "N", "NO", "no", "No", "n"]:
+                break
+            else:
+                print("Invalid input. Please enter 'yes' or 'no'.")
+        if again in ["N", "NO", "no", "No", "n"]:
+            print("Thank you for using the calculator!")
+            break
 #exception handling for invalid inputs
     except ZeroDivisionError:
         print("Syntax Error. Cannot be divided by zero. Please try again!")
