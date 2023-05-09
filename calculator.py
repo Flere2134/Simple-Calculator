@@ -10,8 +10,8 @@ def divide(num_1, num_2):
 #get user input for operation choice
 while True:
     try:
-        operation = input("Please choose from the operations below. Enter 1/2/3/4: ")
         print("1. Addition\n2. Subtraction\n3. Multiplication\n4. Division")
+        operation = input("Please choose from the operations above. Enter 1/2/3/4: ")
 #get user input for numbers
         num_1 = float(input("Enter first number: "))
         num_2 = float(input("Enter second number: "))
@@ -30,7 +30,7 @@ while True:
         else:
             print("Invalid input. Choose an operation by entering a number from 1 to 4.")
 #print output
-        print(f"Result: {answer}")
+        print("Result =", answer)
 #ask user input if want to try again
 #exception handling for invalid inputs
     except ZeroDivisionError:
