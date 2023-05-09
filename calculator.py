@@ -16,9 +16,17 @@ while True:
         num_1 = float(input("Enter first number: "))
         num_2 = float(input("Enter second number: "))
 #if add, add numbers
+        if operation == 1:
+            answer = add(num_1, num_2)
 #if subtract, subtract numbers
+        if operation == 2:
+            answer = subtract(num_1, num_2)
 #if multiply, multiply numbers
+        if operation == 3:
+            answer = multiply(num_1, num_2)
 #if divide, divide numbers
+        if operation == 4:
+            answer = divide(num_1, num_2)
 #print output
 #ask user input if want to try again
 #exception handling for invalid inputs
