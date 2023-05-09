@@ -8,6 +8,9 @@ def multiply(num_1, num_2):
 def divide(num_1, num_2):
     return num_1/num_2
 #get user input for operation choice
+while True:
+    try:
+        operation = input("What operation would you like to do? ")
 #get user input for numbers
 #if add, add numbers
 #if subtract, subtract numbers
