@@ -19,14 +19,17 @@ while True:
         if operation == 1:
             answer = add(num_1, num_2)
 #if subtract, subtract numbers
-        if operation == 2:
+        elif operation == 2:
             answer = subtract(num_1, num_2)
 #if multiply, multiply numbers
-        if operation == 3:
+        elif operation == 3:
             answer = multiply(num_1, num_2)
 #if divide, divide numbers
-        if operation == 4:
+        elif operation == 4:
             answer = divide(num_1, num_2)
+        else:
+            print("Invalid input. Choose an operation by entering a number from 1 to 4.")
 #print output
+        print(f"Result: {answer}")
 #ask user input if want to try again
 #exception handling for invalid inputs
