@@ -10,7 +10,8 @@ def divide(num_1, num_2):
 #get user input for operation choice
 while True:
     try:
-        operation = input("What operation would you like to do? ")
+        operation = input("Please choose from the operations below. Enter 1/2/3/4: ")
+        print("1. Addition\n2. Subtraction\n3. Multiplication\n4. Division")
 #get user input for numbers
         num_1 = float(input("Enter first number: "))
         num_2 = float(input("Enter second number: "))
