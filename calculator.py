@@ -1,3 +1,4 @@
+import time
 #function for arithmetic operation
 def add(num_1, num_2):
     return num_1+num_2
@@ -37,6 +38,7 @@ while True:
             print("Invalid input. Choose an operation by entering a number from 1 to 4.")
             continue
 #print output
+        time.sleep(1)
         print("Result =", answer)
 #try again
         while True:
