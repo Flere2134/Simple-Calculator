@@ -1,4 +1,12 @@
 #function for arithmetic operation
+def add(num_1, num_2):
+    return num_1+num_2
+def subtract(num_1, num_2):
+    return num_1-num_2
+def multiply(num_1, num_2):
+    return num_1*num_2
+def divide(num_1, num_2):
+    return num_1/num_2
 #get user input for operation choice
 #get user input for numbers
 #if add, add numbers
