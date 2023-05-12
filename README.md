@@ -10,3 +10,6 @@
 6. If no, Display “Thank you!” and the program will exit 
 7. Use Python Function and appropriate Exceptions to capture errors during   
     runtime.
+
+#### Notes
+- A simple calculator where user inputs 1st number first then operation symbol then second number, just like a calculator
