@@ -12,9 +12,9 @@ def divide(num_1, num_2):
 while True:
     try:
 #get user input of 1st number 1st then operation then 2nd number
-        num_1 = float(input())
-        operation = input(())
-        num_2 = float(input())
+        num_1 = float(input("Enter first number: "))
+        operation = (input("Enter operation symbol: "))
+        num_2 = float(input("Enter second number: "))
         answer = 0
 #if add, add numbers
         if operation == "+":
