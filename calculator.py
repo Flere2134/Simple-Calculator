@@ -11,31 +11,25 @@ def divide(num_1, num_2):
 #get user input for operation choice
 while True:
     try:
-        print("1. Addition\n2. Subtraction\n3. Multiplication\n4. Division")
-        while True:
-            operation = (input("Please choose from the operations above. Enter 1/2/3/4: "))
-            if operation in ["1", "2", "3", "4"]:
-                break
-            else:
-                print("Invalid input. Please try again.")
-#get user input for numbers
-        num_1 = float(input("Enter first number: "))
-        num_2 = float(input("Enter second number: "))
+#get user input of 1st number 1st then operation then 2nd number
+        num_1 = float(input())
+        operation = input(())
+        num_2 = float(input())
         answer = 0
 #if add, add numbers
-        if operation == "1":
+        if operation == "+":
             answer = add(num_1, num_2)
 #if subtract, subtract numbers
-        elif operation == "2":
+        elif operation == "-":
             answer = subtract(num_1, num_2)
 #if multiply, multiply numbers
-        elif operation == "3":
+        elif operation == "*":
             answer = multiply(num_1, num_2)
 #if divide, divide numbers
-        elif operation == "4":
+        elif operation == "/":
             answer = divide(num_1, num_2)
         else:
-            print("Invalid input. Choose an operation by entering a number from 1 to 4.")
+            print("Invalid input. Choose an operation by entering a valid symbol (+, -, *, /).")
             continue
 #print output
         time.sleep(1)
